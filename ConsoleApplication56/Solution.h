@@ -4,6 +4,7 @@
 #include<stack>
 #include<sstream>
 #include<map>
+#include<unordered_set>
 
 #include"ListNode.h"
 #include"Point.h"
@@ -30,5 +31,7 @@ public:
 	ListNode *detectCycle(ListNode *head);
 	bool hasCycle(ListNode *head);
 
+	vector<string> wordBreak(string s, unordered_set<string> &dict);
+	void findWordBreak(string s, int idx, unordered_set<string> &dict, string ans, vector<string> &ret);
 	
 };

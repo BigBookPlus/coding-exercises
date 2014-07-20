@@ -87,6 +87,7 @@
     <ClCompile Include="reverseWords.cpp" />
     <ClCompile Include="sortList.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="wordBreak.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ListNode.h" />
