@@ -48,6 +48,9 @@
     <ClCompile Include="wordBreak.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="wordBreakI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution.h">

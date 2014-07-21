@@ -88,6 +88,7 @@
     <ClCompile Include="sortList.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="wordBreak.cpp" />
+    <ClCompile Include="wordBreakI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ListNode.h" />

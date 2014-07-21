@@ -17,9 +17,9 @@ int main()
 	cout << sln.detectCycle(head) << endl;
 	cout << sln.hasCycle(head) << endl;
 
-	string s = "leetcode";//"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab";// ;
+	string s = "a";//"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab";// ;
   //"catsanddog";//"aaaaaaa";//	
-	unordered_set<string> dict = { "leet", "code" };// { "a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa" }; //{"cat", "cats", "and", "sand", "dog"};//;// = { "aaa", "aaaa" };//
+	unordered_set<string> dict = { "a" };// { "a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa" }; //{"cat", "cats", "and", "sand", "dog"};//;// = { "aaa", "aaaa" };//
 	vector<string> ans = sln.wordBreak(s, dict);
 	for (int i = 0; i < ans.size(); i++)
 		cout << ans[i] << endl;

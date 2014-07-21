@@ -37,5 +37,5 @@ public:
 	void findWordBreak3(string s, int idx, vector<int> ans, vector<vector<int>> &ret, vector<vector<int>> &sucs);
 
 	bool wordBreak1(string s, unordered_set<string> &dict);
-	bool findWordBreak4(string s, int idx, vector<int> &ans, vector<vector<int>> &ret, bool **dp, bool* tag);
+	bool findWordBreak4(string s, int idx, vector<vector<int>> &sucs, bool* tag);
 };
