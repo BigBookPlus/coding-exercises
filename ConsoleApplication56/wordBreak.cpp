@@ -1,33 +1,35 @@
 #include "Solution.h"
+//========================================================================//
+/* We use a back tracking method here. The dp array is aborted by a more **
+** effective vector<int>. durint the backtracking, we tagged the start   **
+** position from where the string to the end can not be split according to*
+** the given dictionary.                                                  */
+//========================================================================//
 vector<string> Solution::wordBreak(string s, unordered_set<string> &dict) {
 	vector<vector<int>> ret;
 	vector<string> result;
 	vector<int> ans;
 	int slen = s.length();
 
-	//bool dp[1000][1000];
-	bool **dp = new bool*[200];
-	bool *tag = new bool[200];
-	fill(tag, tag + 200, true);
-	for (int i = 0; i < 200; i++)
-		dp[i] = new bool[200];
+	bool *tag = new bool[slen];
+	fill(tag, tag + slen, true);
+
 	vector<vector<int>> sucs;
 	for (int i = 0; i < slen; i++)
 		sucs.push_back(vector<int>());
+
 	for (int i = 0; i < slen; i++){
 		for (int j = i; j < slen; j++)
 		{
 			if (dict.find(s.substr(i, j - i + 1)) != dict.end()){
-				dp[i][j] = true;
 				sucs[i].push_back(j);
 			}
-			else
-				dp[i][j] = false;
 		}
 	}
 
 	//findWordBreak3(s, 0,  ans, ret, sucs);
-	findWordBreak2(s, 0, ans, ret, dp, tag);
+	//findWordBreak2(s, 0, ans, ret, dp, tag);
+	findWordBreak1(s, 0, ans, ret, sucs, tag);
 	for (int i = 0; i < ret.size(); i++)
 	{
 		vector<int> tmp = ret[i];
@@ -66,6 +68,28 @@ void Solution::findWordBreak(string s, int idx, unordered_set<string> &dict, str
 		}
 		len++;
 	}
+}
+bool Solution::findWordBreak1(string s, int idx, vector<int> &ans, vector<vector<int>> &ret, vector<vector<int>> &sucs, bool* tag)
+{
+	if (idx == s.length()){
+		ret.push_back(ans);
+		return true;
+	}
+	bool flag = false;
+	for (int i = 0; i < sucs[idx].size();i++)
+	{
+
+		int j = sucs[idx][i];
+		if (tag[j + 1]){
+			ans.push_back(j);
+			if (findWordBreak1(s, j+1, ans, ret, sucs, tag))
+				flag = true;
+			else
+				tag[j+1] = false;
+			ans.pop_back();
+		}
+	}
+	return flag;
 }
 bool Solution::findWordBreak2(string s, int idx, vector<int> &ans, vector<vector<int>> &ret, bool **dp, bool* tag)
 {
@@ -106,58 +130,3 @@ void Solution::findWordBreak3(string s, int idx, vector<int> ans, vector<vector<
 	}
 	cout << "out" << endl;
 }
-
-//bool Solution::wordBreak1(string s, unordered_set<string> &dict) {
-//	vector<vector<int>> ret;
-//	vector<string> result;
-//	vector<int> ans;
-//	int slen = s.length();
-//
-//	//bool dp[1000][1000];
-//	bool **dp = new bool*[200];
-//	bool *tag = new bool[200];
-//	fill(tag, tag + 200, true);
-//	for (int i = 0; i < 200; i++)
-//		dp[i] = new bool[200];
-//	vector<vector<int>> sucs;
-//	for (int i = 0; i < slen; i++)
-//		sucs.push_back(vector<int>());
-//	for (int i = 0; i < slen; i++){
-//		for (int j = i; j < slen; j++)
-//		{
-//			if (dict.find(s.substr(i, j - i + 1)) != dict.end()){
-//				dp[i][j] = true;
-//				sucs[i].push_back(j);
-//			}
-//			else
-//				dp[i][j] = false;
-//		}
-//	}
-//
-//	//findWordBreak3(s, 0,  ans, ret, sucs);
-//	return findWordBreak4(s, 0, ans, ret, dp, tag);
-//
-//}
-//bool Solution::findWordBreak4(string s, int idx, vector<int> &ans, vector<vector<int>> &ret, bool **dp, bool* tag)
-//{
-//	if (idx == s.length()){
-//		ret.push_back(ans);
-//		return true;
-//	}
-//	int len = 1;
-//	//bool flag = false;
-//	while (idx + len <= s.length())
-//	{
-//		if (dp[idx][idx + len - 1] && tag[idx + len]){
-//			ans.push_back(idx + len - 1);
-//			if (findWordBreak4(s, idx + len, ans, ret, dp, tag) == false)
-//				tag[idx + len] = false;
-//			else
-//				return true;
-//			ans.pop_back();
-//		}
-//		len++;
-//	}
-//	return false;
-//	//return flag;
-//}
