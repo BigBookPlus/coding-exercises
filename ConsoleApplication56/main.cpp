@@ -25,4 +25,7 @@ int main()
 		cout << ans[i] << endl;
 	cout << sln.wordBreak1(s, dict) << endl;
 
+	int A[4] = { 1 };
+	cout << sln.singleNumber(A, 1) << endl;
+
 }

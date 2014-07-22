@@ -77,6 +77,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="copyRandomList.cpp" />
     <ClCompile Include="detectCycle.cpp" />
     <ClCompile Include="evalRPN.cpp" />
     <ClCompile Include="hasCycle.cpp" />
@@ -85,6 +86,7 @@
     <ClCompile Include="maxPoints.cpp" />
     <ClCompile Include="reorderList.cpp" />
     <ClCompile Include="reverseWords.cpp" />
+    <ClCompile Include="singleNumber.cpp" />
     <ClCompile Include="sortList.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="wordBreak.cpp" />
@@ -95,6 +97,7 @@
     <ClInclude Include="LRUCache.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="RandomListNode.h" />
     <ClInclude Include="Solution.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

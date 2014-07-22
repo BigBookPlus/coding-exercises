@@ -5,9 +5,11 @@
 #include<sstream>
 #include<map>
 #include<unordered_set>
+#include<unordered_map>
 
 #include"ListNode.h"
 #include"Point.h"
+#include"RandomListNode.h"
 
 using namespace std;
 class Solution{
@@ -39,4 +41,8 @@ public:
 
 	bool wordBreak1(string s, unordered_set<string> &dict);
 	bool findWordBreak4(string s, int idx, vector<vector<int>> &sucs, bool* tag);
+
+	RandomListNode* copyRandomList(RandomListNode *head);
+
+	int singleNumber(int A[], int n);
 };

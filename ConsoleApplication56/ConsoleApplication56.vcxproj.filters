@@ -51,6 +51,12 @@
     <ClCompile Include="wordBreakI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="copyRandomList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="singleNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution.h">
@@ -66,6 +72,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LRUCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomListNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
