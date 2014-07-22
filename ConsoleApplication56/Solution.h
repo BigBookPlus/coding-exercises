@@ -45,4 +45,6 @@ public:
 	RandomListNode* copyRandomList(RandomListNode *head);
 
 	int singleNumber(int A[], int n);
+
+	int candy(vector<int> &ratings);
 };
