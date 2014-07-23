@@ -1,4 +1,6 @@
 #include"Solution.h"
+//
+
 int Solution::candy(vector<int> &ratings) {
 	const int len = ratings.size();
 	vector<int> &in = ratings;

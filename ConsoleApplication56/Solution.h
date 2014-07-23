@@ -10,9 +10,12 @@
 #include"ListNode.h"
 #include"Point.h"
 #include"RandomListNode.h"
+#include"UndirectedGraphNode.h"
 
 using namespace std;
 class Solution{
+private:
+	unordered_map<UndirectedGraphNode*, UndirectedGraphNode*> nodemap;
 public:
 	void reverseWords(string &s);
 
@@ -47,4 +50,8 @@ public:
 	int singleNumber(int A[], int n);
 
 	int candy(vector<int> &ratings);
+
+	int canCompleteCircuit(vector<int> &gas, vector<int> &cost);
+
+	UndirectedGraphNode *cloneGraph(UndirectedGraphNode *node);
 };

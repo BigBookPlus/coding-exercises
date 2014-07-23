@@ -60,6 +60,12 @@
     <ClCompile Include="candy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="canCompleteCircuit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cloneGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution.h">
@@ -78,6 +84,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RandomListNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UndirectedGraphNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -77,7 +77,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="canCompleteCircuit.cpp" />
     <ClCompile Include="candy.cpp" />
+    <ClCompile Include="cloneGraph.cpp" />
     <ClCompile Include="copyRandomList.cpp" />
     <ClCompile Include="detectCycle.cpp" />
     <ClCompile Include="evalRPN.cpp" />
@@ -100,6 +102,7 @@
     <ClInclude Include="Point.h" />
     <ClInclude Include="RandomListNode.h" />
     <ClInclude Include="Solution.h" />
+    <ClInclude Include="UndirectedGraphNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
