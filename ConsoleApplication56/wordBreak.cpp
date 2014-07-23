@@ -1,7 +1,7 @@
 #include "Solution.h"
 //========================================================================//
 /* We use a back tracking method here. The dp array is aborted by a more **
-** effective vector<int>. durint the backtracking, we tagged the start   **
+** effective vector<int>. during the backtracking, we tagged the start   **
 ** position from where the string to the end can not be split according to*
 ** the given dictionary.                                                  */
 //========================================================================//
