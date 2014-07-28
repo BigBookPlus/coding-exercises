@@ -87,6 +87,8 @@
     <ClCompile Include="insertionSortList.cpp" />
     <ClCompile Include="LRUCache.cpp" />
     <ClCompile Include="maxPoints.cpp" />
+    <ClCompile Include="minCut.cpp" />
+    <ClCompile Include="partition.cpp" />
     <ClCompile Include="reorderList.cpp" />
     <ClCompile Include="reverseWords.cpp" />
     <ClCompile Include="singleNumber.cpp" />

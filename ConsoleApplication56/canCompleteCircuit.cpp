@@ -1,4 +1,5 @@
 #include"Solution.h"
+//The gas station is a circle!! A fucking circle!
 int Solution::canCompleteCircuit(vector<int> &gas, vector<int> &cost)
 {
 	int gasSum = 0;

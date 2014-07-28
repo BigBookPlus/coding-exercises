@@ -6,7 +6,7 @@
 #include<map>
 #include<unordered_set>
 #include<unordered_map>
-
+#include<algorithm>
 #include"ListNode.h"
 #include"Point.h"
 #include"RandomListNode.h"
@@ -54,4 +54,11 @@ public:
 	int canCompleteCircuit(vector<int> &gas, vector<int> &cost);
 
 	UndirectedGraphNode *cloneGraph(UndirectedGraphNode *node);
+
+	vector<vector<string>> partition(string s);
+	void dfs(string t, int** tag, int start, int tlen, vector<vector<string>> &ret, vector<string> ans);
+
+	int minCut(string s);
+	void findMin(string t, int** tag, int start, int tlen, int &ans, int count);
+
 };
