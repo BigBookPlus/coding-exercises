@@ -85,6 +85,8 @@
     <ClCompile Include="evalRPN.cpp" />
     <ClCompile Include="hasCycle.cpp" />
     <ClCompile Include="insertionSortList.cpp" />
+    <ClCompile Include="ladderLength.cpp" />
+    <ClCompile Include="longestConsecutive.cpp" />
     <ClCompile Include="LRUCache.cpp" />
     <ClCompile Include="maxPoints.cpp" />
     <ClCompile Include="minCut.cpp" />
@@ -94,6 +96,8 @@
     <ClCompile Include="singleNumber.cpp" />
     <ClCompile Include="sortList.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="sumNumbers.cpp" />
+    <ClCompile Include="SurroundedRegions.cpp" />
     <ClCompile Include="wordBreak.cpp" />
     <ClCompile Include="wordBreakI.cpp" />
   </ItemGroup>
@@ -104,6 +108,7 @@
     <ClInclude Include="Point.h" />
     <ClInclude Include="RandomListNode.h" />
     <ClInclude Include="Solution.h" />
+    <ClInclude Include="TreeNode.h" />
     <ClInclude Include="UndirectedGraphNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

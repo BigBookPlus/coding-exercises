@@ -1,6 +1,7 @@
 /*
 this structure should be added manually to your submitting code.
 */
+#pragma once
 struct Node{
 	int key;
 	int value;

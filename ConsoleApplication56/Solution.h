@@ -1,7 +1,9 @@
+#pragma once
 #include<iostream>
 #include<string>
 #include<vector>
 #include<stack>
+#include<queue>
 #include<sstream>
 #include<map>
 #include<unordered_set>
@@ -11,7 +13,7 @@
 #include"Point.h"
 #include"RandomListNode.h"
 #include"UndirectedGraphNode.h"
-
+#include"TreeNode.h"
 using namespace std;
 class Solution{
 private:
@@ -61,4 +63,13 @@ public:
 	int minCut(string s);
 	void findMin(string t, int** tag, int start, int tlen, int &ans, int count);
 
+	void solve(vector<vector<char>> &board);//Surrounded Regions
+	bool findTag(vector<vector<char>> &board, int x, int y, int m, int n, char num);
+	
+	int sumNumbers(TreeNode *root);
+	void calc(TreeNode* node, int num, int *ans);
+
+	int longestConsecutive(vector<int> &num);
+
+	int ladderLength(string start, string end, unordered_set<string> &dict);
 };
