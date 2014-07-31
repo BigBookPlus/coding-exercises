@@ -46,6 +46,10 @@ int main()
 	//for (; it != udict.end(); it++)
 	//	cout << *it << endl;
 	//cout << endl;
-	cout << sln.ladderLength(start, end, dict) << endl;
+	//cout << sln.ladderLength(start, end, dict) << endl;
+	vector<vector<string>> findLadder = sln.findLadders(start, end, dict);
+	for (int i = 0; i < findLadder[0].size(); i++)
+		cout << findLadder[0][i] << " ";
+	cout << endl;
 	return 0;
 }

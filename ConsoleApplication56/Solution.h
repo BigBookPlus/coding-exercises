@@ -72,4 +72,7 @@ public:
 	int longestConsecutive(vector<int> &num);
 
 	int ladderLength(string start, string end, unordered_set<string> &dict);
+
+	vector<vector<string>> findLadders(string start, string end, unordered_set<string> &dict);
+	void construct(unordered_set<int>* prev, vector<vector<string>>& ret, vector<string>& ans, unordered_set<string>::const_iterator* list, int p, int si);
 };

@@ -83,6 +83,7 @@
     <ClCompile Include="copyRandomList.cpp" />
     <ClCompile Include="detectCycle.cpp" />
     <ClCompile Include="evalRPN.cpp" />
+    <ClCompile Include="findLadders.cpp" />
     <ClCompile Include="hasCycle.cpp" />
     <ClCompile Include="insertionSortList.cpp" />
     <ClCompile Include="ladderLength.cpp" />
