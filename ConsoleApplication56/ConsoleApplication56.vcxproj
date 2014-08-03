@@ -77,6 +77,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="buildTree.cpp" />
     <ClCompile Include="canCompleteCircuit.cpp" />
     <ClCompile Include="candy.cpp" />
     <ClCompile Include="cloneGraph.cpp" />
@@ -91,6 +92,7 @@
     <ClCompile Include="insertionSortList.cpp" />
     <ClCompile Include="isPalindrome.cpp" />
     <ClCompile Include="ladderLength.cpp" />
+    <ClCompile Include="levelOrderBottom.cpp" />
     <ClCompile Include="longestConsecutive.cpp" />
     <ClCompile Include="LRUCache.cpp" />
     <ClCompile Include="maxPathSum.cpp" />
@@ -104,6 +106,8 @@
     <ClCompile Include="reorderList.cpp" />
     <ClCompile Include="reverseWords.cpp" />
     <ClCompile Include="singleNumber.cpp" />
+    <ClCompile Include="sortedArrayToBST.cpp" />
+    <ClCompile Include="sortedListToBST.cpp" />
     <ClCompile Include="sortList.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sumNumbers.cpp" />

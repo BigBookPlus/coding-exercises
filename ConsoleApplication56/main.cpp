@@ -117,5 +117,11 @@ int main()
 		root = root->right;
 	}
 	cout << endl;
+
+	ListNode* Head = new ListNode(0);
+	sln.sortedListToBST(Head);
+	vector<int> pre = { 1, 2 };
+	vector<int> ino = { 2, 1 };
+	sln.buildTree(pre, ino);
 	return 0;
 }

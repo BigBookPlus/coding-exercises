@@ -16,6 +16,7 @@
 #include"TreeNode.h"
 #include"TreeLinkNodeh.h"
 using namespace std;
+
 class Solution{
 private:
 	unordered_map<UndirectedGraphNode*, UndirectedGraphNode*> nodemap;
@@ -95,4 +96,18 @@ public:
 
 	void flatten(TreeNode *root);
 	TreeNode* solve(TreeNode* root);
+
+
+	TreeNode *sortedListToBST(ListNode *head);
+
+	TreeNode *sortedArrayToBST(vector<int> &num);
+	TreeNode* sortedArrayToBST(vector<int> &num, int start, int end);
+
+	vector<vector<int> > levelOrderBottom(TreeNode *root);
+
+	TreeNode *buildTree(vector<int> &preorder, vector<int> &inorder);
+	TreeNode *buildTreeHelper(vector<int> &preorder, vector<int> &inorder, 
+		int p, int start,int end);
+
+
 };
