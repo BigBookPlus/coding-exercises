@@ -14,6 +14,7 @@
 #include"RandomListNode.h"
 #include"UndirectedGraphNode.h"
 #include"TreeNode.h"
+#include"TreeLinkNodeh.h"
 using namespace std;
 class Solution{
 private:
@@ -27,15 +28,15 @@ public:
 
 	int maxPoints(vector<Point> &points);
 
-	ListNode *sortList(ListNode *head);
+	ListNode* sortList(ListNode *head);
 	ListNode* merge(ListNode* l1, ListNode* l2);
 	ListNode* mergeSort(ListNode* list);
 
-	ListNode *insertionSortList(ListNode *head);
+	ListNode* insertionSortList(ListNode *head);
 
 	void reorderList(ListNode *head);
 
-	ListNode *detectCycle(ListNode *head);
+	ListNode* detectCycle(ListNode *head);
 	bool hasCycle(ListNode *head);
 
 	vector<string> wordBreak(string s, unordered_set<string> &dict);
@@ -75,4 +76,23 @@ public:
 
 	vector<vector<string>> findLadders(string start, string end, unordered_set<string> &dict);
 	void construct(unordered_set<int>* prev, vector<vector<string>>& ret, vector<string>& ans, unordered_set<string>::const_iterator* list, int p, int si);
+
+	bool isPalindrome(string s);
+
+	int maxPathSum(TreeNode *root);
+	int calc(TreeNode *root, int& ans);
+
+	int maxProfit(vector<int> &prices);
+
+	int maxProfiti(vector<int> &prices);
+
+	int maxProfitii(vector<int> &prices);
+
+	int minimumTotal(vector<vector<int> > &triangle);
+
+	void connect(TreeLinkNode *root);
+	void connecti(TreeLinkNode *root);
+
+	void flatten(TreeNode *root);
+	TreeNode* solve(TreeNode* root);
 };

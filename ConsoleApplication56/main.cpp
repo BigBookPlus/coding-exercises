@@ -2,6 +2,7 @@
 #include"Solution.h"
 using namespace std;
 
+
 int main()
 {
 	//ListNode* list = new ListNode(0);
@@ -47,9 +48,74 @@ int main()
 	//	cout << *it << endl;
 	//cout << endl;
 	//cout << sln.ladderLength(start, end, dict) << endl;
-	vector<vector<string>> findLadder = sln.findLadders(start, end, dict);
-	for (int i = 0; i < findLadder[0].size(); i++)
-		cout << findLadder[0][i] << " ";
+	//vector<vector<string>> findLadder = sln.findLadders(start, end, dict);
+	//for (int i = 0; i < findLadder[0].size(); i++)
+	//	cout << findLadder[0][i] << " ";
+	//cout << endl;
+	int tree[] = { 1, 2, 5, 3, 4, -1, 6 };// { 5, 4, 8, 11, -1, 13, 4, 7, 2, -1, -1, -1, 1 };
+	queue<TreeNode*> q;
+	TreeNode* root = new TreeNode(1);
+	q.push(root);
+	int idx = 1;
+	while (idx < 7)
+	{
+		TreeNode* node = q.front();
+		q.pop(); int x;
+		if ((x=tree[idx++]) != -1)
+		{
+			if (idx >= 7)
+			break;
+			TreeNode * nd = new TreeNode(x);
+			node->left = nd;
+			q.push(nd);
+		}
+		if (idx >= 7)
+			break;
+		if ((x = tree[idx++])!= -1)
+		{
+			if (idx >= 7)
+			break;
+			TreeNode * nd = new TreeNode(x);
+			node->right = nd;
+
+
+			q.push(nd);
+		}
+	}
+	while (!q.empty()) q.pop();
+	q.push(root);
+	while (!q.empty())
+	{
+		TreeNode* nd = q.front();
+		q.pop();
+		if (nd != NULL)
+			cout << nd->val << ",";
+		else
+			cout << "#,";
+
+		if (nd->left != NULL)
+			q.push(nd->left);
+		//else
+		//	q.push(NULL);
+
+		if (nd->right != NULL)
+			q.push(nd->right);
+		//else
+			//q.push(NULL);
+	}
+	cout << endl;
+	cout << sln.maxPathSum(root) << endl;
+
+	vector<int> input = { 8, 3, 6, 2, 8, 8, 8, 4, 2, 0, 7, 2, 9, 4, 9 }; //,4, 2, 5, 7, 2, 4, 9, 0
+	cout << sln.maxProfitii(input) << endl;
+
+	TreeNode *root1 = new TreeNode(1);
+	root1->left = new TreeNode(2);
+	sln.flatten(root);
+	while (root != NULL) {
+		cout << root->val << endl;
+		root = root->right;
+	}
 	cout << endl;
 	return 0;
 }
