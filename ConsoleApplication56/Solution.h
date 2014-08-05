@@ -109,5 +109,13 @@ public:
 	TreeNode *buildTreeHelper(vector<int> &preorder, vector<int> &inorder, 
 		int p, int start,int end);
 
+	void recoverTree(TreeNode *root);
+	void recoverTreeHelper(TreeNode* root, bool& flag, int &pre, TreeNode* &ptr1, TreeNode*& ptr2);
 
+	vector<TreeNode *> generateTrees(int n);
+//	vector<TreeNode *>  build(vector<TreeNode *>& ans, TreeNode*& node, int left, int right, int& count, int n, TreeNode* root);
+	vector<TreeNode *>  build( int left, int right);
+
+	TreeNode * copyTree(TreeNode* root);
+	int num(TreeNode* root);
 };

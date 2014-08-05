@@ -88,6 +88,7 @@
     <ClCompile Include="evalRPN.cpp" />
     <ClCompile Include="findLadders.cpp" />
     <ClCompile Include="flatten.cpp" />
+    <ClCompile Include="generateTrees.cpp" />
     <ClCompile Include="hasCycle.cpp" />
     <ClCompile Include="insertionSortList.cpp" />
     <ClCompile Include="isPalindrome.cpp" />
@@ -103,6 +104,7 @@
     <ClCompile Include="minCut.cpp" />
     <ClCompile Include="minimumTotal.cpp" />
     <ClCompile Include="partition.cpp" />
+    <ClCompile Include="recoverTree.cpp" />
     <ClCompile Include="reorderList.cpp" />
     <ClCompile Include="reverseWords.cpp" />
     <ClCompile Include="singleNumber.cpp" />

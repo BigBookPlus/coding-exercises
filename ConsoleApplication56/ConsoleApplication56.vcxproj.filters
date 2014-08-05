@@ -126,6 +126,12 @@
     <ClCompile Include="buildTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="recoverTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generateTrees.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution.h">

@@ -123,5 +123,7 @@ int main()
 	vector<int> pre = { 1, 2 };
 	vector<int> ino = { 2, 1 };
 	sln.buildTree(pre, ino);
+	vector<TreeNode *> gt=sln.generateTrees(3);
+	cout << gt.size() << endl;
 	return 0;
 }
