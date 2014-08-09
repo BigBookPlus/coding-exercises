@@ -6,6 +6,7 @@
 #include<queue>
 #include<sstream>
 #include<map>
+#include<set>
 #include<unordered_set>
 #include<unordered_map>
 #include<algorithm>
@@ -118,4 +119,43 @@ public:
 
 	TreeNode * copyTree(TreeNode* root);
 	int num(TreeNode* root);
+
+	int numDistinct(string S, string T);
+
+	bool isInterleave(string s1, string s2, string s3);
+	bool judge(int a, int b, int c, string &s1, string &s2, string &s3);
+
+	vector<string> restoreIpAddresses(string s);
+	void sep(vector<string>& ret, string s, int step, int start, vector<int>& idxs);
+	bool num(string s, int start, int end);
+
+	ListNode * reverseBetween(ListNode *head, int m, int n);
+
+	vector<vector<int> > subsetsWithDup(vector<int> &S);
+	void count(int n, vector<int>&S, int step, int start, vector<int>& ans, set<vector<int>>& ret);
+
+	int numDecodings(string s);
+	void countDecode(string s, int start, int&ans);
+	bool isCode(string s, int start, int len);
+	int codeVal(string s, int start, int len);
+
+	vector<int> grayCode(int n);
+
+	bool isScramble(string s1, string s2);
+	bool judgeScramble(string &s1, string &s2, int start, int end);
+
+	int largestRectangleArea(vector<int> &height);
+
+	int maximalRectangle(vector<vector<char> > &matrix);
+
+	bool exist(vector<vector<char> > &board, string word);
+	bool searchWord(vector<vector<char> > &board, int x, int y, int m, int n, int step, int **tag, string&word);
+
+	string minWindow(string S, string T);
+
+	int minDistance(string word1, string word2);
+
+	string simplifyPath(string path);
+
+	int sqrt(int x);
 };

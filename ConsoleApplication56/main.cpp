@@ -123,7 +123,42 @@ int main()
 	vector<int> pre = { 1, 2 };
 	vector<int> ino = { 2, 1 };
 	sln.buildTree(pre, ino);
-	vector<TreeNode *> gt=sln.generateTrees(3);
+	vector<TreeNode *> gt=sln.generateTrees(1);
 	cout << gt.size() << endl;
+	string s = "";// "rabbbit";
+	string t = "a";// "rabbit";
+	cout << sln.numDistinct(s, t) << endl;
+
+	string s1 = "aabaac", s2 = "aadaaeaaf", s3 = "aadaaeaabaafaac";
+	cout << sln.isInterleave(s1, s2, s3) << endl;
+	string ip = "010010";
+	vector<string> ipans = sln.restoreIpAddresses(ip);
+	for (int i = 0; i < ipans.size(); i++)
+		cout << ipans[i] << endl;
+	vector<int> subset = { 1, 2, 2 };
+	vector<vector<int>> retofsubset = sln.subsetsWithDup(subset);
+	for (int i = 0; i < retofsubset.size(); i++){
+		for (int j = 0; j < retofsubset[i].size(); j++)
+		{
+			cout << retofsubset[i][j] << ",";
+		}
+	cout << endl;
+	}
+	string code= "01";
+	cout << sln.numDecodings(code) << endl;
+	vector<int> grayCode = sln.grayCode(1);
+	for (auto it = grayCode.begin(); it != grayCode.end(); it++)
+		cout << *it << " ";
+	cout << endl;
+
+	string scram1 = "abbbcbaaccacaacc", scram2 = "acaaaccabcabcbcb";
+	cout << sln.isScramble(scram1, scram2) << endl;
+	string minWindowS = "cabefgecdaecf", minWindowT = "cae";
+	cout << sln.minWindow(minWindowS, minWindowT) << endl;
+	string word1 = "a", word2 = "b";
+	cout << sln.minDistance(word1, word2) << endl;
+	string path = "/a/b";
+	cout << sln.simplifyPath(path) << endl;
+	//vector<string> exists = {}
 	return 0;
 }
