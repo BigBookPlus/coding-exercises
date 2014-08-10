@@ -159,6 +159,10 @@ int main()
 	cout << sln.minDistance(word1, word2) << endl;
 	string path = "/a/b";
 	cout << sln.simplifyPath(path) << endl;
+	vector<string> text = { "This", "is", "an", "example", "of", "text", "justification." };
+	vector<string> textRes = sln.fullJustify(text,16);
+	for (int i = 0; i < textRes.size(); i++)
+		cout << textRes[i] << endl;
 	//vector<string> exists = {}
 	return 0;
 }

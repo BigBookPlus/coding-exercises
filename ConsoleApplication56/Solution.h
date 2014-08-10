@@ -158,4 +158,6 @@ public:
 	string simplifyPath(string path);
 
 	int sqrt(int x);
+
+	vector<string> fullJustify(vector<string> &words, int L);
 };

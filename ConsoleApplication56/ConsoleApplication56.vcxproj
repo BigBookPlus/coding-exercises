@@ -89,6 +89,7 @@
     <ClCompile Include="exist.cpp" />
     <ClCompile Include="findLadders.cpp" />
     <ClCompile Include="flatten.cpp" />
+    <ClCompile Include="fullJustify.cpp" />
     <ClCompile Include="generateTrees.cpp" />
     <ClCompile Include="grayCode.cpp" />
     <ClCompile Include="hasCycle.cpp" />
