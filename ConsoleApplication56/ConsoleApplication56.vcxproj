@@ -90,13 +90,18 @@
     <ClCompile Include="findLadders.cpp" />
     <ClCompile Include="flatten.cpp" />
     <ClCompile Include="fullJustify.cpp" />
+    <ClCompile Include="generateMatrix.cpp" />
     <ClCompile Include="generateTrees.cpp" />
+    <ClCompile Include="getPermutation.cpp" />
     <ClCompile Include="grayCode.cpp" />
     <ClCompile Include="hasCycle.cpp" />
+    <ClCompile Include="insert.cpp" />
     <ClCompile Include="insertionSortList.cpp" />
     <ClCompile Include="isInterleave.cpp" />
+    <ClCompile Include="isNumber.cpp" />
     <ClCompile Include="isPalindrome.cpp" />
     <ClCompile Include="isScramble.cpp" />
+    <ClCompile Include="jump.cpp" />
     <ClCompile Include="ladderLength.cpp" />
     <ClCompile Include="largestRectangleArea.cpp" />
     <ClCompile Include="levelOrderBottom.cpp" />
@@ -108,10 +113,12 @@
     <ClCompile Include="maxProfit.cpp" />
     <ClCompile Include="maxProfiti.cpp" />
     <ClCompile Include="maxProfitii.cpp" />
+    <ClCompile Include="merge.cpp" />
     <ClCompile Include="minCut.cpp" />
     <ClCompile Include="minDistance.cpp" />
     <ClCompile Include="minimumTotal.cpp" />
     <ClCompile Include="minWindow.cpp" />
+    <ClCompile Include="multiply.cpp" />
     <ClCompile Include="numDecodings.cpp" />
     <ClCompile Include="numDistinct.cpp" />
     <ClCompile Include="partition.cpp" />
@@ -130,10 +137,12 @@
     <ClCompile Include="subsetsWithDup.cpp" />
     <ClCompile Include="sumNumbers.cpp" />
     <ClCompile Include="SurroundedRegions.cpp" />
+    <ClCompile Include="trap.cpp" />
     <ClCompile Include="wordBreak.cpp" />
     <ClCompile Include="wordBreakI.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Interval.h" />
     <ClInclude Include="ListNode.h" />
     <ClInclude Include="LRUCache.h" />
     <ClInclude Include="Node.h" />

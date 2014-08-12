@@ -10,12 +10,15 @@
 #include<unordered_set>
 #include<unordered_map>
 #include<algorithm>
+#include<functional>
+
 #include"ListNode.h"
 #include"Point.h"
 #include"RandomListNode.h"
 #include"UndirectedGraphNode.h"
 #include"TreeNode.h"
 #include"TreeLinkNodeh.h"
+#include"Interval.h"
 using namespace std;
 
 class Solution{
@@ -160,4 +163,21 @@ public:
 	int sqrt(int x);
 
 	vector<string> fullJustify(vector<string> &words, int L);
+
+	bool isNumber(const char *s);
+
+	vector<vector<int> > generateMatrix(int n);
+
+	string getPermutation(int n, int k);
+
+	vector<Interval> insert(vector<Interval> &intervals, Interval newInterval);
+
+	vector<Interval> merge(vector<Interval> &intervals);
+	static bool cmp(const Interval& i1, const Interval& i2);
+
+	string multiply(string num1, string num2);
+
+	int jump(int A[], int n);
+
+	int trap(int A[], int n);
 };

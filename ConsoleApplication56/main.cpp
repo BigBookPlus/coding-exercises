@@ -61,20 +61,20 @@ int main()
 	{
 		TreeNode* node = q.front();
 		q.pop(); int x;
-		if ((x=tree[idx++]) != -1)
+		if ((x = tree[idx++]) != -1)
 		{
 			if (idx >= 7)
-			break;
+				break;
 			TreeNode * nd = new TreeNode(x);
 			node->left = nd;
 			q.push(nd);
 		}
 		if (idx >= 7)
 			break;
-		if ((x = tree[idx++])!= -1)
+		if ((x = tree[idx++]) != -1)
 		{
 			if (idx >= 7)
-			break;
+				break;
 			TreeNode * nd = new TreeNode(x);
 			node->right = nd;
 
@@ -101,7 +101,7 @@ int main()
 		if (nd->right != NULL)
 			q.push(nd->right);
 		//else
-			//q.push(NULL);
+		//q.push(NULL);
 	}
 	cout << endl;
 	cout << sln.maxPathSum(root) << endl;
@@ -123,7 +123,7 @@ int main()
 	vector<int> pre = { 1, 2 };
 	vector<int> ino = { 2, 1 };
 	sln.buildTree(pre, ino);
-	vector<TreeNode *> gt=sln.generateTrees(1);
+	vector<TreeNode *> gt = sln.generateTrees(1);
 	cout << gt.size() << endl;
 	string s = "";// "rabbbit";
 	string t = "a";// "rabbit";
@@ -142,9 +142,9 @@ int main()
 		{
 			cout << retofsubset[i][j] << ",";
 		}
-	cout << endl;
+		cout << endl;
 	}
-	string code= "01";
+	string code = "01";
 	cout << sln.numDecodings(code) << endl;
 	vector<int> grayCode = sln.grayCode(1);
 	for (auto it = grayCode.begin(); it != grayCode.end(); it++)
@@ -160,9 +160,25 @@ int main()
 	string path = "/a/b";
 	cout << sln.simplifyPath(path) << endl;
 	vector<string> text = { "This", "is", "an", "example", "of", "text", "justification." };
-	vector<string> textRes = sln.fullJustify(text,16);
+	vector<string> textRes = sln.fullJustify(text, 16);
 	for (int i = 0; i < textRes.size(); i++)
 		cout << textRes[i] << endl;
+	const char* numStr = "4e+";
+	cout << sln.isNumber(numStr) << endl;
 	//vector<string> exists = {}
+	vector<vector<int>>matrix = sln.generateMatrix(5);
+	for (int i = 0; i < matrix.size(); i++)
+	{
+		for (int j = 0; j < matrix[i].size(); j++)
+		{
+			cout << matrix[i][j] << "\t";
+		}
+		cout << endl;
+	}
+	vector<Interval> input1 = { { 0, 1 }, {2,5} };
+	string num1 = "1", num2 = "1";
+	cout << sln.multiply(num1, num2) << endl;
+	int trapList[] = { 9, 8, 9, 5, 8, 8, 8, 0, 4 };
+	cout << sln.trap(trapList, 9) << endl;
 	return 0;
 }
