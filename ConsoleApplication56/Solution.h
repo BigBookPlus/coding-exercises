@@ -180,4 +180,89 @@ public:
 	int jump(int A[], int n);
 
 	int trap(int A[], int n);
+
+	bool isMatch(const char *s, const char *p);
+
+	int firstMissingPositive(int A[], int n);
+
+	vector<vector<int> > Solution::combinationSum(vector<int> &candidates, int target);
+	void solve(set<vector<int> >& retset, vector<int> &ans, vector<int> &candidates, int step, int sum, int target);
+
+	vector<vector<int> > combinationSum2(vector<int> &num, int target);
+	void solve2(set<vector<int> >& retset, vector<int> &ans, vector<int> &candidates, int step, int sum, int target);
+
+	string countAndSay(int n);
+
+	void solveSudoku(vector<vector<char> > &board);
+	bool Solution::solveSudokuBT(vector<vector<char> > &board, int x, int y);
+
+	bool isValidSudoku(vector<vector<char> > &board);
+
+	int searchInsert(int A[], int n, int target);
+
+	vector<int> searchRange(int A[], int n, int target);
+
+	int search(int A[], int n, int target);
+
+	int longestValidParentheses(string s);
+
+	void nextPermutation(vector<int> &num);
+
+	vector<int> findSubstring(string S, vector<string> &L);
+
+	int divide(int dividend, int divisor);
+
+	char *strStr(char *haystack, char *needle);
+
+	int removeElement(int A[], int n, int elem);
+
+	int removeDuplicates(int A[], int n);
+
+	ListNode *reverseKGroup(ListNode *head, int k);
+
+	ListNode *mergeKLists(vector<ListNode *> &lists);
+	ListNode* kmerge(ListNode* a, ListNode* b);
+
+	vector<string> generateParenthesis(int n);
+	void _generateParenthesis(vector<string>& ret, string&ans, int open, int close, int n);
+
+	bool isValid(string s);
+
+	ListNode *removeNthFromEnd(ListNode *head, int n);
+
+	vector<string> letterCombinations(string digits);
+	void _letterCombinations(vector<string> &ret, string &ans, 
+		vector<vector<char>>& dict, string digits, int step);
+
+	vector<vector<int> > fourSum(vector<int> &num, int target);
+	void _fourSum(vector<vector<int>>& ret, vector<int>& ans, vector<int> &num, int step, int idx, int sum, int target);
+	static bool cmpSum(const vector<int>& v1, const vector<int>& p2);
+
+	int romanToInt(string s);
+
+	string intToRoman(int num);
+
+	int maxArea(vector<int> &height);
+
+	string longestCommonPrefix(vector<string> &strs);
+
+	bool isPalindrome(int x);
+
+	string getPermutation2(int n, int k);
+
+	bool isMatch2(const char* s, const char * p);
+
+	int atoi(const char *str);
+
+	ListNode *addTwoNumbers(ListNode *l1, ListNode *l2);
+
+	string longestPalindrome(string s);
+
+	int lengthOfLongestSubstring(string s);
+
+	double findMedianSortedArrays(int A[], int m, int B[], int n);
+
+	vector<int> twoSum(vector<int> &numbers, int target);
+
+	string convert(string s, int nRows);
 };

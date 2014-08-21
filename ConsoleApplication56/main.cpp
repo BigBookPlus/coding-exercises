@@ -180,5 +180,97 @@ int main()
 	cout << sln.multiply(num1, num2) << endl;
 	int trapList[] = { 9, 8, 9, 5, 8, 8, 8, 0, 4 };
 	cout << sln.trap(trapList, 9) << endl;
+	vector<int> candidates = { 14, 6, 25, 9, 30, 20, 33, 34, 28, 30, 16, 12, 31, 9, 9, 12, 34, 16, 25, 32, 8, 7, 30, 12, 33, 20, 21, 29, 24, 17, 27, 34, 11, 17, 30, 6, 32, 21, 27, 17, 16, 8, 24, 12, 12, 28, 11, 33, 10, 32, 22, 13, 34, 18, 12 };
+	vector<vector<int> > combin = sln.combinationSum2(candidates, 27);
+	for (int i = 0; i < combin.size(); i++)
+	{
+		for (int j = 0; j < combin[i].size(); j++)
+		{
+			cout << combin[i][j] << " ";
+		}
+		cout << endl;
+	}
+	int cac=111211;
+	cout << sln.countAndSay(1) << endl;
+
+	string substring = "lingmindraboofooowingdingbarrwingmonkeypoundcake";
+	vector<string> strvec = { "fooo", "barr", "wing", "ding", "wing" };
+	vector<int> resOfSubString = sln.findSubstring(substring, strvec);
+	for (int i = 0; i < resOfSubString.size(); i++)
+		cout << resOfSubString[i] << " ";
+	cout << endl;
+	int a = 1, b = -1;
+	//cout << sln.divide(a, b) << endl;
+
+	ListNode* p0 = new ListNode(0);
+	ListNode* p = p0;
+	for (int i = 1; i <= 10; i++){
+		p->next = new ListNode(i);
+		p = p->next;
+	}
+	p = p0;
+	while (p)
+	{
+		cout << p->val << " ";
+		p = p->next;
+	}
+	cout << endl;
+	p=sln.reverseKGroup(p0, 12);
+	cout << endl;
+	while (p)
+	{
+		cout << p->val << " ";
+		p = p->next;
+	}
+	vector<string> retPar = sln.generateParenthesis(3);
+	for (int i = 0; i < retPar.size(); i++)
+		cout << retPar[i] << " ";
+	cout << endl;cout << endl;
+	string parVal = "()";
+	cout << sln.isValid(parVal) << endl;
+
+	string letterCom = "23";
+	vector<string> letterComList = sln.letterCombinations(letterCom);
+	for (auto it = letterComList.begin(); it != letterComList.end(); it++)
+		cout << *it << " ";
+	cout << endl;
+
+	vector<int> fourSumNum = { 1, 0, -1, 0, -2, 2 };
+	int fourSumTarget = 0;
+	vector<vector<int>> fourSumRet = sln.fourSum(fourSumNum, fourSumTarget);
+	for (int i = 0; i < fourSumRet.size(); i++)
+	{
+		for (int j = 0; j < fourSumRet[i].size(); j++)
+		{
+			cout << fourSumRet[i][j] << " ";
+		}
+		cout << endl;
+	}
+	string roman = "CXCIX";
+	cout << sln.romanToInt(roman) << endl;
+
+	int itoroman = 900;
+	cout << sln.intToRoman(itoroman) << endl;
+	//for (int i = 1; i <= 6;i++)
+	cout << sln.getPermutation2(3, 6) << endl;
+
+	cout << sln.isMatch2("aaaaaaaaaaaaab", "a*a*a*a*a*a*a*a*a*a*c") << endl;
+
+	cout << sln.atoi("1") << endl;
+	ListNode* p1 = new ListNode(5);
+	ListNode* p2 = new ListNode(5);
+	ListNode* addList=sln.addTwoNumbers(p1, p2);
+	while (addList)
+	{
+		cout << addList->val << " ";
+		addList = addList->next;
+	}
+	cout << endl;
+
+	string longsub = "wlrbbmqbhcdarzowkkyhiddqscdxrjmowfrxsjybldbefsarcbynecdyggxxpklorellnmpapqfwkhopkmco";
+	cout<< sln.lengthOfLongestSubstring(longsub) << endl;
+
+	string convert = "PAYPALISHIRING";
+	cout << sln.convert(convert, 3) << endl;
 	return 0;
 }
