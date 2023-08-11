@@ -1,9 +1,3 @@
-cmake_minimum_required(VERSION 3.10)
-
-project(oj2023)
-
-
-
 add_executable(luogu-p1996 luogu-p1996.cpp)
 add_executable(luogu-p1540 luogu-p1540.cpp)
 add_executable(luogu-p2947 luogu-p2947.cpp)
@@ -14,3 +8,4 @@ add_executable(lanqiao-1122 lanqiao-1122.cpp)
 add_executable(poj-3122 poj-3122.cpp)
 add_executable(luogu-p3382 luogu-p3382.cpp)
 add_executable(hiho-1142 hiho-1142.cpp)
+add_executable(luogu-3745 luogu-3745.cpp)
