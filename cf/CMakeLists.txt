@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.8)
+project(CP)
+add_executable(1873G 1873G.cpp)
+add_executable(1872E 1872E.cpp)
+add_executable(1863D 1863D.cpp)
