@@ -1,0 +1,1 @@
+add_executable(acwing94 acwing94.cpp)
