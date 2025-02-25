@@ -5,4 +5,4 @@ project(coding-exercises)
 
 #add_subdirectory(oj-2023)
 #add_subdirectory(cf)
-add_subdirectory(2024)
+add_subdirectory(2025)
